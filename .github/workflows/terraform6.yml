@@ -39,7 +39,7 @@ jobs:
 
     - name: Chnage directory
       run: |
-        cd terraform6
+        cd terraform6/module/
         ls -la
 
     - name: Initialize Terraform
@@ -49,4 +49,4 @@ jobs:
       run: terraform plan
 
     - name: Terraform Apply
-      run: terraform apply  --auto-approve
+      run: terraform destroy  --auto-approve
